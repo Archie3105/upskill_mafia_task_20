@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+}
+
+.shoe-list {
+  display: grid;
+  grid-template-columns: auto auto ;
+  width: 70%;
+  height: auto;
+  /* border: 1px solid; */
+  
+}
+
+.shoe-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  width: 15vw;
+  height: auto;
+  margin: 2rem auto;
+  transition: all ease 0.3s;
+}
+.shoe-item:hover{
+  box-shadow: 0px 0px 11px 5px rgb(162, 160, 160);
+  transform: scale(1.05);
+}
+
+.item-name {
+  background-color: rgb(226, 195, 158);
+  padding: 1rem;
+  width: 70%;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.shoe-item img {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.quantity-controls button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px solid #000;
+  outline: none;
+  color: #000;
+}
+
+.quantity-controls button:hover {
+  background-color: #ddd;
+}
+
+.cart {
+  width: 45%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: rgb(242, 245, 246);
+  margin-left: 1rem;
+  padding-right: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  width: 100%;
+  /* height: auto; */
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 0 5px;
+  text-align: start;
+}
+.item-row {
+  display: flex;
+  margin-top: -20px;
+  justify-content: space-between;
+}
+
+.shoe-item img {
+  width: 12rem;
+  height: 12rem;
+}
+
+
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 10px; */
+  
+}
+
+.quantity-controls button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  /* padding: 5px 10px; */
+}
+
+.quantity-controls span {
+  margin: 10px 5px 0px;
+  font-size: 15px;
+  color: red;
+}
+
+
+.Navbar img{
+  width: 2rem;
+  height: 2rem;
+}
+.Navbar{
+  display: flex;
+  position: sticky;
+  width: 100%;
+  border-top: 2px solid black;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: rgb(242, 245, 246);
+  margin-bottom: 2rem;
+}
+.Navbar ul{
+  display: flex;
+  margin-left: 5rem;
+}
+.Navbar ul li{
+  list-style: none;
+  margin: 0 1rem;
+}
+ 
+.Navbar ul li a {
+  font-size: 1.2rem;
+  color: black;
+}
+ 
+.Navbar ul li a:hover {
+    color: rgb(154, 138, 138);
+}
+ 
